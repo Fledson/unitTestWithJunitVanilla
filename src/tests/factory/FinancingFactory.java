@@ -27,4 +27,11 @@ public class FinancingFactory {
         return new Financing(totalAmount, income, months);
     }
 
+    public static Financing createValidFinancing() {
+        return createFinancing(100000.0, 2000.00, 80);
+    }
+
+    public static Financing createInvalidFinancing() {
+        return createFinancing(100000.00, 2000.00, 20);
+    }
 }
